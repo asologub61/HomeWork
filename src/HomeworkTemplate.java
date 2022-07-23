@@ -17,8 +17,7 @@ public class HomeworkTemplate {
         String[][] answerOptions = {{"1) 4", "2) 6", "3) 8", "4) 10"}, {"1) javac", "2) java", "3) class", "4) enum"}, {"1) for", "2) for each", "3) while", "4) do while"}};
 
         // TODO: Массив правильных ответов
-        int[] correctAnswers;
-        correctAnswers = new int[]{3, 1, 3};
+        int[] correctAnswers = {3, 1, 3};
 
         // Примечание - можете придумать как хранить всю информацию в одном массиве
 
