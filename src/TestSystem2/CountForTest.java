@@ -4,12 +4,14 @@ public class CountForTest {
     private static int writeAnswer = 0;
     private static int wrongAnswer = 0;
 
-    public void setWriteAnswer(){
+    public String getTrueAnswer(){
         writeAnswer++;
+        return "Правильно";
     }
 
-    public void setWrongAnswer(){
+    public String getWrongAnswer() {
         wrongAnswer++;
+        return "Неправильно";
     }
 
     public void inputResultCount(){

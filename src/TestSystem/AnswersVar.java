@@ -2,7 +2,7 @@ package TestSystem;
 
 public class AnswersVar {
 
-    private static String varForQuestionOne = "1) 4  \n2) 6  \n3) 8  \n4) 10";
+    private  String varForQuestionOne = "1) 4  \n2) 6  \n3) 8  \n4) 10";
     private String varForQuestionTwo = "1) javac  \n2) java  \n3) class  \n4) enum";
     private String varForQuestionThree = "1) for  \n2) for each  \n3) while  \n4) do while";
 
