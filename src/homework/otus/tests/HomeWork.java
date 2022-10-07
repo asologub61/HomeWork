@@ -15,10 +15,10 @@ public class HomeWork {
     public static void main(String[] args) {
 
 //        Раскомментируем нужную строку и смотрим как работает тест
-        new TestDiceImpl().testDiceImpl();
+//        new TestDiceImpl().testDiceImpl();
 //        new TestGameForHomeWork().testGame1();
 //        new TestGameForHomeWork().testGame2();
-//        new TestGameForHomeWork().testGame3();
+        new TestGameForHomeWork().testGame3();
         }
     }
 
