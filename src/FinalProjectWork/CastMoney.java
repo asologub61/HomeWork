@@ -3,11 +3,11 @@ package FinalProjectWork;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Starter {
-    Scanner scanner = new Scanner(System.in);
+public class CastMoney {
+//    Scanner scanner = new Scanner(System.in);
     CurrencyWithForms currency = new CurrencyWithForms();
-//    Spliter spliter = new Spliter();
-//    Values value = new Values();
+    Spliter spliter = new Spliter();
+    Values value = new Values();
 
 
 //         public ArrayList numberToString (Spliter spliter, Values value, ArrayList segmentsToANumber, int number) {
@@ -46,20 +46,19 @@ public class Starter {
 //             }
 //             return stringNumber;
 //         }
-         public void castMoney(){
-             System.out.println("Введите число:");
-             Integer number = scanner.nextInt();
-             try {
-                 Spliter spliter = new Spliter(number);
-                 ArrayList segmentsToANumber = spliter.getSegmentToANumber();
-                 ArrayList stringFromNumber = spliter.getStringFromNumber();
-                 String castToWords = currency.addFormsAndCurrency(stringFromNumber, segmentsToANumber);
-                 castToWords = castToWords.substring(1, 2).toUpperCase() + castToWords.substring(2);
-                 System.out.println(castToWords);
-             } catch ( RuntimeException e){
-                 System.err.println("В качестве значения можно ввести только целое число");
-                 System.err.println(e);
-             }
+         public void doCastMoney(int number){
+//             System.out.println("Введите число:");
+//             int number = scanner.nextInt();
+                     try {
+                     ArrayList segmentsFromANumber = spliter.splitNumberToSegments(number);
+                     ArrayList stringFromNumbersSegments = spliter.numberToString(value, segmentsFromANumber, number);
+                     String castToWords = currency.addFormsAndCurrency(stringFromNumbersSegments, segmentsFromANumber);
+                     castToWords = castToWords.substring(1, 2).toUpperCase() + castToWords.substring(2);
+                     System.out.println(castToWords);
+                 } catch (Exception e) {
+                     System.err.println("В качестве значения можно ввести только целое число больше нуля");
+                     System.err.println(e);
+                 }
          }
     }
 

@@ -1,13 +1,13 @@
 package FinalProjectWork;
 
+import java.util.Scanner;
+
 public class Project {
     public static void main (String[] args){
-        Starter starter = new Starter();
-
-        starter.castMoney();
-//        } catch (RuntimeException e){
-//            System.err.println("В качестве значения можно ввести только целое число");
-//            System.err.println(e);
-//        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите число:");
+        int number = scanner.nextInt();
+        CastMoney starter = new CastMoney();
+        starter.doCastMoney(number);
     }
 }

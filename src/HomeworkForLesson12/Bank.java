@@ -45,7 +45,7 @@ public class Bank {
 //    Map <Account, Client> clientMap
 //    Map <Client, ArrayList<Account>> clientMap
 //    Map <Client, ArrayList<Account>> clientMap
-//    ArrayList<Client> list
+//    ArrayList<Client> addSegmentsFromANumber
         public  void addToClientMap() {
             Client ivanov = new Client("Иван Иванов", 21);
             Client petrov = new Client("Петр Петров", 32);

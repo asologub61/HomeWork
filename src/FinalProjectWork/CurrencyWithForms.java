@@ -23,18 +23,18 @@ public class CurrencyWithForms {
         return forms2;
     }
 
-    public String addFormsAndCurrency(ArrayList stringFromNumber, ArrayList segmentsToANumber){
-        int level = segmentsToANumber.size() - 1;
-        String peaceOfNumber = "";
+    public String addFormsAndCurrency(ArrayList stringFromNumbersSegments, ArrayList segmentsFromANumber){
+        int level = segmentsFromANumber.size() - 1;
+        String segmentOfNumber = "";
         String stringNumber = "";
-        for( int i = 0; i < segmentsToANumber.size(); i++){
-            if (stringFromNumber.get(i).equals("") && level != 0) {
-                peaceOfNumber = (String) stringFromNumber.get(i);
+        for(int i = 0; i < segmentsFromANumber.size(); i++){
+            if (stringFromNumbersSegments.get(i).equals("") && level != 0) {
+                segmentOfNumber = (String) stringFromNumbersSegments.get(i);
             } else {
-                peaceOfNumber = stringFromNumber.get(i) + this.addForms((Integer) segmentsToANumber.get(i), this.getFormsOfWords()[level][0],
+                segmentOfNumber = stringFromNumbersSegments.get(i) + this.addForms((Integer) segmentsFromANumber.get(i), this.getFormsOfWords()[level][0],
                         this.getFormsOfWords()[level][1], this.getFormsOfWords()[level][2]);
             }
-            stringNumber += peaceOfNumber;
+            stringNumber += segmentOfNumber;
             level--;
         }
         return stringNumber;

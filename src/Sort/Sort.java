@@ -46,13 +46,13 @@ public class Sort {
 
 
 ////        Cортировка методом Collections.sort();
-//        Collections.addAll(list, randomArray);
+//        Collections.addAll(addSegmentsFromANumber, randomArray);
 //        long timeStartCollectionsSort = System.currentTimeMillis();
-//        Collections.sort(list);
+//        Collections.sort(addSegmentsFromANumber);
 //        long timeStopCollectionsSort = System.currentTimeMillis();
 //        System.out.println("сортировка Collections.sort(), время сортировки "
 //                          + (timeStopCollectionsSort - timeStartCollectionsSort) + " миллисекунд");
-//        System.out.println(list);
+//        System.out.println(addSegmentsFromANumber);
 
         }
     }
