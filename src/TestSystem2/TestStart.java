@@ -13,11 +13,9 @@ public class TestStart {
             byte userChoose = scan.nextByte();
             switch (userChoose) {
                 case (1):
-                    logicTest.chooseYourQuestion(userChoose);
-                    break;
+
                 case (2):
-                    logicTest.chooseYourQuestion(userChoose);
-                    break;
+
                 case (3):
                     logicTest.chooseYourQuestion(userChoose);
                     break;
